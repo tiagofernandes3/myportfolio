@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #2e2e2e;
+}
+
+.container > .last-Menu{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  position: relative;
+  min-height: 20px;
+  margin:0;
+  padding: 16px;
+}
+
+.last-Menu > h2{
+	position: absolute;
+	left: 60px;
+	font-family: 'Josefin Sans', sans-serif;
+	color:#fff;
+	font-size: 16pt;
+	top: 12px;
+}
+
+.container > .last-Menu > ul{
+	list-style: none;
+	display: flex;
+}
+
+.container > .last-Menu > ul > li{
+	margin:0 4px;
+	text-align: center;
+}
+
+.container > .last-Menu > ul > li > a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 14pt;
+	position: relative;
+	text-transform: uppercase;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 400;
+	padding: 8px;
+	background-image: linear-gradient(
+		to left,
+		#3ABCFC,
+		#3ABCFC 50%,
+		#fff 50%
+	);
+  background-size: 200% 100%;
+  background-position:100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	transition: all 160ms ease-in-out;
+	
+}
+
+.container > .last-Menu > ul > li > a:hover{
+	 background-position: 0;
+}
+
+
+/**/
+.dotTopMenu, .dotContacts{
+	width: 20px;
+	height:2px;
+	position: absolute;
+
+
+	opacity: 0;
+	border-radius: 10px;
+	transition: all 160ms ease-in-out;
+} 
+
+.dotTopMenu{
+	bottom: 10px;
+	left: 958.5px;
+	background: #fff;
+}
+
+.dotContacts{
+	bottom: 16px;
+	left: 62.5px;
+	background: #3ABCFC;
+}
+
+/**/
+
+
+/* Containers */
+.container{
+  min-height: 50px;
+	max-height: 20px;
+}
+
+.container, .contentPage{
+	width: 1152px;
+	position: relative;
+	margin: 0 auto;
+
+}
+
+
+/* Content Page */
+
+.resumePage{
+	width: 100%;
+	background: #2A2A2A;
+}
+
+.resumePage > div{
+	width: 1152px;
+	position: relative;
+	margin: 0 auto 40px auto;
+	padding: 60px 0;
+	font-size: 16pt;
+	color: #fff;
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.resumePage > div > h2{
+	font-weight: 28pt;
+}
+
+.resumePage > div > p{
+	position: relative;
+	top: 20px;
+	font-weight: 400;
+	font-size: 14pt;
+	padding: 0 160pt;
+}
+
+
+.contentPage{
+	width: 1152px;
+	position: relative;
+	margin: 0 auto;
+  overflow: hidden;
+}
+
+.contentPage > .imagesContent > ul > li > p{
+	padding: 16px 0 24px 0;
+	position: relative;
+	top: 0;
+	margin: 0;
+	font-size: 12pt;
+	font-weight: 400;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #fff;
+	text-align: center;
+}
+
+.contentPage > .imagesContent > ul > li > img {
+	width: 100%;
+}
+
+.useProgram {
+	width: 1152px;
+	height: 100px;
+	position: relative;
+	margin: 10px auto;
+	padding: 10px 0;
+}
+
+.useProgram:after{
+	content: '';
+	width: 100%;
+	border-radius: 5px;
+	margin-left: 0%;
+	height: 1px;
+	position: absolute;
+	top: 0; left: 0;
+	background: #3D3D3D;
+}
+
+.useProgram > ul {
+min-width: 260px;
+	max-width: 400px;
+	height: 80px;
+	right: 0;
+  float: right;
+	align-items: end;
+	display: block;
+	position: relative;
+	top: 0;
+}
+
+.useProgram > ul > h2{
+	text-align: left;
+	margin: 10px 0;
+	font-size: 12pt;
+	color: #fff;
+	font-weight: 400;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.useProgram > ul > li{
+	min-width: 100px;
+	max-height: 200px;
+	min-height: 30px;
+	list-style: none;
+	position: relative;
+	display: inline;
+	float: left;
+	padding:5px 10px;
+	margin: 0 8px 0 0;
+	background: #4C4C4C;
+	border-radius: 5px;
+}
+
+.useProgram > ul > li > p, .useProgram > ul > li > img{
+	float: left;
+	display: inline-block;
+	position: relative;
+	margin-top: 4px;
+}
+
+.useProgram > ul > li > img{
+	width: 24px;
+}
+.useProgram > ul > li > p{
+  margin-left: 10px;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #fff;
+	top: 2px;
+}
+
+
+/* Other works */
+.otherWorks {
+	width: 100%;
+	position: relative;
+	justify-content: center;
+	display: flex;
+	margin: 20px auto;
+	padding: 62px 0;
+	background: #2A2A2A;
+}
+
+.otherWorks > ul{
+	width: 1152px;
+	height: auto;
+	position: relative;
+	margin: 0 auto;
+}
+
+
+.otherWorks > ul > li {
+  position: relative;
+	display: inline-flex;
+	justify-content: center;
+	align-content: center;
+	margin: 0 0px;
+	list-style-type: none;
+}
+
+.otherWorks > ul > li > a{
+	width: 370px;
+	height: 260px;
+	background: #666;
+	text-align: center;
+	margin: 0 5px;
+	overflow: hidden;
+	border-radius: 2px;
+}
+
+
+.otherWorks > ul > li > a {
+	font-family: 'Josefin Sans', sans-serif;
+	text-decoration: none;
+	font-size: 13pt;
+	font-weight: 400;
+	color: #fff;
+	transform-origin: bottom;
+	transition:all 160ms ease-in-out;
+}
+
+.otherWorks > ul > li a:hover{
+	transform: scale(1.015);
+	z-index: 2;
+	filter: drop-shadow(0 0 8px #141414);
+	background: #fff;
+	color: #000;
+}
+
+.otherWorks > ul > li > a > img{
+	width: 100%;
+}
+
+.otherWorks > ul > li > a > p{
+	padding: 9px 0;
+}
+
+
+footer{
+	width: 100%;
+	min-height: 20px;
+	position: relative;
+	bottom: 0;
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #fff;
+}
+
+footer:after{
+	content: '';
+	width: 100%;
+	height: 30px;
+	position: absolute;
+  bottom: 0;
+	left: 0;
+	background: #333;
+	z-index: 0;
+}
+
+footer > .footerContent{
+	width: 1152px;
+	height: 160px;
+	position: relative;
+	margin: 0 auto;
+	background: none;
+	z-index: 1;
+	padding: 20px 0;
+}
+
+.footerContent > .socialMedia{
+	width: 100%;
+	height: 100px;
+	right: 0;
+	top:10px;
+	float: right;
+	position: relative;
+	background: none;
+	display: grid;
+	justify-content: center;
+}
+
+.footerContent > .socialMedia > h2{
+	color: #fff;
+	font-size:20pt;
+}
+
+.footerContent > .socialMedia > ul{
+	display: inline;
+	position: relative;
+	width: 100%;
+	background: none;
+}
+
+
+.footerContent > .socialMedia > ul > li{
+	width: 200px;
+	margin: 10px 0;
+	display: inline;
+	position: relative;
+}
+
+.footerContent > .socialMedia > ul > li > a{
+	text-decoration: none;
+	font-size: 12pt;
+	position: relative;
+}
+
+
+.footerContent > .socialMedia > ul > li > a> p,
+.footerContent > .socialMedia > ul > li > a > img{
+  position: relative;
+	display: inline;
+	padding: 0 2pt;
+}
+
+
+
+.footerContent > .socialMedia > ul > li > a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 12pt;
+	position: relative;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 400;
+	padding: 8px;
+	background-image: linear-gradient(
+		to left,
+		#D7D7D7,
+		#D7D7D7 50%,
+		#3ABCFC 50%
+	);
+  background-size: 200% 100%;
+  background-position:100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	transition: all 160ms ease-in-out;
+}
+
+.footerContent > .socialMedia > ul > li > a:hover {
+	background-position: 0;
+	
+}
+
+
+.footerContent > .socialMedia > ul > li > a > img{
+	width: 22px;
+	height: 22px;
+	top: 4px;
+	position: relative;
+	overflow: hidden;
+	transition: all 160ms ease-in-out;
+	filter: grayscale(100%);
+}
+
+.footerContent > .socialMedia > ul > li > a:hover img{
+	filter: grayscale(0);
+}
+
+footer > .footerContent > .websiteRight{
+	width: 100%;
+	position: absolute;
+	display: block;
+	bottom: 0;
+	text-align: center;
+	padding: 5pt 0;
+	background: none;
+  
+}
+
+footer > .footerContent > .websiteRight > p{
+	color: #fff;
+	font-family: tahoma;
+	font-size: 10pt;
+}
