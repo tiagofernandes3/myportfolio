@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Forgotten Japanese Forest</title>
+  <link rel="stylesheet" href="stylePage.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <nav class="last-Menu">
+        <h2>Tiago Fernandes</h2>
+
+        <ul>
+          <li><a href="index.html" class="about">About</a></li>
+          <li><a href="javascript:void(0)" class="contats">Contacts</a></li>
+
+          <div class="dotTopMenu"></div>
+        </ul>
+      </nav>
+  </header>
+
+    <div class="resumePage">
+      <div>
+        <h2>Forgotten Japanese Forest</h2>
+        <p>A stone lantern in a fictional "forgotten" forest in Japan.
+The setting with trees, stones, grass and ferns, all very dense, existing for some time and forgotten by some people.
+All modeling and post-production were done using blender and its resources, as well as texturing.</p>
+      </div>
+    </div> <!-- Resumo imagem -->
+
+  <section class="contentPage">
+    <div class="imagesContent">
+        <ul>
+
+          <!-- Blender Render -->
+          <li>
+              <img src="Images/Lantern_Scene_01.png" alt="Lantern_Scene_01">
+          </li> <!-- imagem 01 -->
+
+          <!-- Unreal Render -->
+          <li>
+            <img src="Images/Lantern_Scene_02.png" alt="Lantern_Scene_02">
+            <p>Glowing wooden lantern</p> 
+          </li> <!-- imagem 01 -->
+
+          <!-- Unreal Render -->
+          <li>
+            <img src="Images/Lantern_Scene_03.png" alt="Lantern_Scene_03">
+
+          </li> <!-- imagem 01 -->
+
+          <li>
+            <img src="Images/Lantern_Scene_Solid.png" alt="Lantern_Scene_Solid">
+            <p>Solid mesh</p> 
+          </li> <!-- imagem 01 -->
+
+          <li>
+            <img src="Images/Lantern_Scene_wirefreme.png" alt="Lantern_Scene_wirefreme">
+            <p>Wireframe</p> 
+          </li> <!-- imagem 01 -->
+        </ul>
+    </div>
+  </section>
+
+<div class="useProgram">
+
+    <ul>
+      <h2>Software Used</h2>
+
+      <li>
+        <img src="images/Icons/Blender.png" alt="Blender">
+        <p>Blender</p>
+      </li>
+
+    </ul>
+  </div>
+
+  <div class="otherWorks">
+
+    <ul>
+      <li>
+        <a href="Surviving_Page.html">
+          <img src="Images/Surviving_Final_Tb.png" alt="Create Blender">
+          <p>Surviving the Depths</p> 
+        </a>
+      </li> <!-- imagem 01 -->
+
+      <li>
+        <a href="Heart_Page.html">
+          <img src="Images/Ice_Heart_01.png" alt="Create Blender">
+          <p>Ice Heart</p> 
+        </a>
+      </li> <!-- imagem 02 -->
+
+      <li>
+        <a href="japan_Page.html">
+          <img src="Images/Render_Result.png" alt="Create Blender">
+          <p>Streets of japan</p> 
+        </a>
+      </li> <!-- imagem 03 -->
+    </ul>
+  </div>
+
+  <footer>
+    <div class="footerContent">
+
+      <div class="socialMedia">
+        <h2>Contact</h2>
+        <ul>
+
+          <li> <!-- Start -->
+            <a href="https://tiagob66.artstation.com/"> 
+              <img src="Images/Icons/Hover_Icons/artstation.png" alt="Artstation"> 
+                Artstation
+            </a>
+          </li> <!-- End Social - 01 -->
+
+          <li> <!-- Start -->
+            <a href="https://www.deviantart.com/tfive3"> 
+              <img src="Images/Icons/Hover_Icons/deviantart.png" alt="Deviantart"> 
+                Deviantart
+            </a>
+          </li> <!-- End Social - 02 -->
+
+          <li> <!-- Start -->
+            <a href="https://www.behance.net/TFive3"> 
+              <img src="Images/Icons/Hover_Icons/behance.png" alt="Behance"> 
+                Behance
+            </a>
+          </li> <!-- End Social - 03 -->
+
+          <li> <!-- Start -->
+            <a href="https://twitter.com/Tiago_b33"> 
+              <img src="Images/Icons/Hover_Icons/twitter.png" alt="Twitter"> 
+                Twitter
+            </a>
+          </li> <!-- End Social - 04 -->
+
+          <li> <!-- Start -->
+            <a href="https://www.instagram.com/five3dart/"> 
+              <img src="Images/Icons/Hover_Icons/instagram.png" alt="Instagram"> 
+              Instagram
+            </a>
+          </li> <!-- End Social - 05 -->
+      <div class="dotContacts"> </div>
+        </ul>
+      </div>
+      <div class="websiteRight">
+        <p> &copy; Tiago - All rights reserved.</p>
+      </div>
+
+    </div>
+  </footer> 
+
+
+<script type="text/javascript">
+  
+window.addEventListener('load', function() {
+  window.scrollTo(0, 0);
+  document.querySelector('.video').play();
+});
+
+const linkAbout = document.querySelector(".contats");
+const destinationAbout = document.querySelector(".footerContent");
+
+linkAbout.addEventListener('click', function(evento) {
+  evento.preventDefault();
+  destinationAbout.scrollIntoView({ behavior: 'smooth' });
+});
+
+
+//Start Dot Menu Main #############
+var dotMenu = document.querySelector(".dotTopMenu");
+
+document.querySelectorAll(".last-Menu > ul > li").forEach(element =>{
+  element.addEventListener("mouseover", () =>{
+    //console.log(element.offsetLeft + (element.offsetWidth / 2) - 8);
+    dotMenu.style.opacity = "1";
+    dotMenu.style.left = element.offsetLeft + (element.offsetWidth / 2) - 8 +"px";
+
+  })
+});
+
+document.querySelectorAll(".last-Menu > ul > li").forEach(element =>{
+  element.addEventListener("mouseout", () =>{
+    dotMenu.style.opacity = "0";
+    dotMenu.style.left = "958.5px";
+  })
+});
+
+// End dot #############
+
+/*Dot Contacts*/
+var dotSocialMenu = document.querySelector(".dotContacts");
+
+document.querySelectorAll(".socialMedia ul li").forEach(element =>{
+  element.addEventListener("mouseover", () =>{
+    //console.log(dotSocialMenu.style.left = element.offsetLeft + (element.offsetWidth / 2) +"px");
+    dotSocialMenu.style.opacity = "1";
+    dotSocialMenu.style.left = element.offsetLeft + (element.offsetWidth / 2) +"px";
+  })
+});
+
+document.querySelectorAll(".socialMedia > ul > li").forEach(element =>{
+  element.addEventListener("mouseout", () =>{
+    dotSocialMenu.style.opacity = "0";
+    dotSocialMenu.style.left = "62.5px";
+  })
+});
+
+
+</script>
+
+</body>
+</html>

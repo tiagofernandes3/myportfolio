@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Ice Heart</title>
+  <link rel="stylesheet" href="stylePage.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <nav class="last-Menu">
+        <h2>Tiago Fernandes</h2>
+
+        <ul>
+          <li><a href="index.html" class="about">About</a></li>
+          <li><a href="javascript:void(0)" class="contats">Contacts</a></li>
+
+          <div class="dotTopMenu"></div>
+        </ul>
+      </nav>
+  </header>
+
+    <div class="resumePage">
+      <div>
+        <h2>Ice Heart</h2>
+        <p>I created this art with the idea of clarifying the issue of guns vs. human lives. Often people forget that we are not in a game, and that on the other side of the gun is a person with dreams, family, friends, desires, and all the things that permeate our daily lives.</p>
+      </div>
+    </div> <!-- Resumo imagem -->
+
+  <section class="contentPage">
+    <div class="imagesContent">
+        <ul>
+
+          <!-- Blender Render -->
+          <li>
+              <img src="Images/Ice_Heart_01.png">
+              <p>Using the final material</p>
+          </li> <!-- imagem 01 -->
+
+          <!-- Unreal Render -->
+          <li>
+              <img src="Images/Ice_Heart_02.png">
+            <p>Using the Starter Material</p> 
+          </li> <!-- imagem 01 -->
+
+          <li>
+            <video width="1152" height="auto" class="video" autoplay muted controls>
+              <source src="Videos/Extend_Ice_Heart.mp4" type="video/mp4">
+            </video>
+              <p>Basic animation of beating heart</p> 
+          </li> <!-- imagem 02 -->
+        </ul>
+    </div>
+  </section>
+
+  <div class="useProgram">
+
+    <ul>
+      <h2>Software Used</h2>
+
+      <li>
+        <img src="Images/Icons/Blender.png" alt="Blender">
+        <p>Blender</p>
+      </li>      
+    </ul>
+  </div>
+
+  <div class="otherWorks">
+
+    <ul>
+      <li>
+        <a href="Arcade_Page.html">
+          <img src="Images/blender-01.png" alt="Arcade game room">
+          <p>Arcade game room</p> 
+        </a>
+      </li> <!-- imagem 01 -->
+
+      <li>
+        <a href="Surviving_Page.html">
+          <img src="Images/Surviving_Final_Tb.png" alt="Ice Heart">
+          <p>Surviving the Depths</p> 
+        </a>
+      </li> <!-- imagem 02 -->
+
+      <li>
+        <a href="japan_Page.html">
+          <img src="Images/Render_Result.png" alt="Streets of japan">
+          <p>Streets of japan</p> 
+        </a>
+      </li> <!-- imagem 03 -->
+    </ul>
+  </div>
+
+  <footer>
+    <div class="footerContent">
+
+      <div class="socialMedia">
+        <h2>Contact</h2>
+        <ul>
+
+          <li> <!-- Start -->
+            <a href="https://tiagob66.artstation.com/"> 
+              <img src="Images/Icons/Hover_Icons/artstation.png" alt="Artstation"> 
+                Artstation
+            </a>
+          </li> <!-- End Social - 01 -->
+
+          <li> <!-- Start -->
+            <a href="https://www.deviantart.com/tfive3"> 
+              <img src="Images/Icons/Hover_Icons/deviantart.png" alt="Deviantart"> 
+                Deviantart
+            </a>
+          </li> <!-- End Social - 02 -->
+
+          <li> <!-- Start -->
+            <a href="https://www.behance.net/TFive3"> 
+              <img src="Images/Icons/Hover_Icons/behance.png" alt="Behance"> 
+                Behance
+            </a>
+          </li> <!-- End Social - 03 -->
+
+          <li> <!-- Start -->
+            <a href="https://twitter.com/Tiago_b33"> 
+              <img src="Images/Icons/Hover_Icons/twitter.png" alt="Twitter"> 
+                Twitter
+            </a>
+          </li> <!-- End Social - 04 -->
+
+          <li> <!-- Start -->
+            <a href="https://www.instagram.com/five3dart/"> 
+              <img src="Images/Icons/Hover_Icons/instagram.png" alt="Instagram"> 
+              Instagram
+            </a>
+          </li> <!-- End Social - 05 -->
+      <div class="dotContacts"> </div>
+        </ul>
+      </div>
+      <div class="websiteRight">
+        <p> &copy; Tiago - All rights reserved.</p>
+      </div>
+
+    </div>
+  </footer> 
+
+
+<script type="text/javascript">
+  
+window.addEventListener('load', function() {
+  window.scrollTo(0, 0);
+  document.querySelector('.video').play();
+});
+
+const linkAbout = document.querySelector(".contats");
+const destinationAbout = document.querySelector(".footerContent");
+
+linkAbout.addEventListener('click', function(evento) {
+  evento.preventDefault();
+  destinationAbout.scrollIntoView({ behavior: 'smooth' });
+});
+
+
+//Start Dot Menu Main #############
+var dotMenu = document.querySelector(".dotTopMenu");
+
+document.querySelectorAll(".last-Menu > ul > li").forEach(element =>{
+  element.addEventListener("mouseover", () =>{
+    //console.log(element.offsetLeft + (element.offsetWidth / 2) - 8);
+    dotMenu.style.opacity = "1";
+    dotMenu.style.left = element.offsetLeft + (element.offsetWidth / 2) - 8 +"px";
+
+  })
+});
+
+document.querySelectorAll(".last-Menu > ul > li").forEach(element =>{
+  element.addEventListener("mouseout", () =>{
+    dotMenu.style.opacity = "0";
+    dotMenu.style.left = "958.5px";
+  })
+});
+
+// End dot #############
+
+/*Dot Contacts*/
+var dotSocialMenu = document.querySelector(".dotContacts");
+
+document.querySelectorAll(".socialMedia ul li").forEach(element =>{
+  element.addEventListener("mouseover", () =>{
+    //console.log(dotSocialMenu.style.left = element.offsetLeft + (element.offsetWidth / 2) +"px");
+    dotSocialMenu.style.opacity = "1";
+    dotSocialMenu.style.left = element.offsetLeft + (element.offsetWidth / 2) +"px";
+  })
+});
+
+document.querySelectorAll(".socialMedia > ul > li").forEach(element =>{
+  element.addEventListener("mouseout", () =>{
+    dotSocialMenu.style.opacity = "0";
+    dotSocialMenu.style.left = "62.5px";
+  })
+});
+
+
+</script>
+
+</body>
+</html>
