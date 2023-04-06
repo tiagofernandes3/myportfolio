@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Portfolio Tiago Fernandes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <nav class="last-Menu">
+        <ul>
+          <li><a href="javascript:void(0)" class="about">About</a></li>
+          <li><a href="javascript:void(0)" class="contats">Contacts</a></li>
+
+          <div class="dotTopMenu"></div>
+        </ul>
+      </nav>
+  </header>
+
+        <div class="contentResume">
+        <div class="logo">
+          Hi, I'm Tiago Fernandes!
+          <p>This is my portfolio, with some of my art. I am passionate about games and creating 3D art. With extensive experience in modeling and creating environments, I always seek to produce high quality work that offers an immersive experience to the public.</p>
+        </div>
+      </div>
+
+    </div>
+
+  <section> 
+    <div class="content">
+
+      <h2>Works</h2>
+
+      <ul>
+
+        <!-- Conteudo 02 -->
+        <li>
+          <a href="Arcade_Page.html">
+            <img src="Images/blender-01.png" alt="blender-01" >
+            <div class="text"> 
+              <h1>Arcade game room</h1>
+              <p>2023</p>
+              </div>
+          </a>
+        </li>
+
+        <!-- Conteudo 02 -->
+        <li>
+          <a href="Surviving_Page.html">
+          <img src="Images/Surviving_Final_Tb.png" alt="Ice Heart" >
+          <div class="text"> 
+            <h1>Surviving the Depths</h1>
+            <p>2023</p>
+          </div>
+          </a>
+        </li>
+
+        <!-- Conteudo 03 -->
+        <li>
+          <a href="Heart_Page.html">
+          <img src="Images/Ice_Heart_01.png" alt="Forgotten Japanese Forest" >
+          <div class="text"> 
+            <h1>Ice Heart</h1>
+            <p>2023</p>
+          </div>
+          </a>
+        </li>
+
+        <!-- Conteudo 04 -->
+        <li>
+          <a href="japan_Page.html">
+          <img src="Images/Render_Result.png" alt="Forgotten Japanese Forest" >
+          <div class="text"> 
+            <h1>Streets of japan</h1>
+            <p>2023</p>
+          </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="Lantern_Page.html">
+          <img src="Images/Lantern_Scene_01.png" alt="Ice Heart" >
+          <div class="text"> 
+            <h1>Forgotten Japanese Forest</h1>
+            <p>2022</p>
+          </div>
+          </a>
+        </li>
+      </ul>
+
+  </section>
+
+  <section class="aboutMy">
+    <div class="aboutContent">
+      <h2>About</h2>
+      <div class="myImage">
+        <img src="Images/MyPhoto.png" alt="MyPhoto">
+      </div>
+
+      <div class="resumeText">
+        <p>My name is Tiago, and I am a passionate game developer skilled in 3D modeling using Blender and development on the Unity platform. With years of experience in game creation, I can create immersive and interactive experiences for players of all ages. Additionally, my programming skills and knowledge of other development tools such as Photoshop enable me to deliver projects efficiently and with exceptional quality. Working in a team and adapting to different challenges and deadlines is essential for project success. I am always seeking new challenges and opportunities to expand my knowledge and skills in game development. Currently, I am also starting to study and develop games using Unreal Engine 5</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footerContent">
+
+      <div class="socialMedia">
+        <h2>Contact</h2>
+        <ul>
+
+          <li> <!-- Start -->
+            <a href="https://tiagob66.artstation.com/"> 
+              <img src="Images/Icons/Hover_icons/artstation.png" alt="Hover_icons"> 
+                Artstation
+            </a>
+          </li> <!-- End Social - 01 -->
+
+          <li> <!-- Start -->
+            <a href="https://www.deviantart.com/tfive3"> 
+              <img src="Images/Icons/Hover_icons/deviantart.png" alt="Hover_icons"> 
+                Deviantart
+            </a>
+          </li> <!-- End Social - 02 -->
+
+          <li> <!-- Start -->
+            <a href="https://www.behance.net/TFive3"> 
+              <img src="Images/Icons/Hover_icons/behance.png" alt="Hover_icons"> 
+                Behance
+            </a>
+          </li> <!-- End Social - 03 -->
+
+          <li> <!-- Start -->
+            <a href="https://twitter.com/Tiago_b33"> 
+              <img src="Images/Icons/Hover_icons/twitter.png" alt="Hover_icons"> 
+                Twitter
+            </a>
+          </li> <!-- End Social - 04 -->
+
+          <li> <!-- Start -->
+            <a href="https://www.instagram.com/five3dart/"> 
+              <img src="Images/Icons/Hover_icons/instagram.png" alt="Hover_icons"> 
+              Instagram
+            </a>
+          </li> <!-- End Social - 05 -->
+      <div class="dotContacts"> </div>
+        </ul>
+      </div>
+      <div class="websiteRight">
+        <p> &copy; Tiago - All rights reserved</p>
+      </div>
+
+    </div>
+  </footer> 
+
+
+<script type="text/javascript">
+window.addEventListener('load', function() {
+  window.scrollTo(0, 0);
+});
+
+const linkAbout = document.querySelector(".about");
+const destinationAbout = document.querySelector(".aboutMy");
+
+linkAbout.addEventListener('click', function(evento) {
+  evento.preventDefault();
+  destinationAbout.scrollIntoView({ behavior: 'smooth' });
+});
+
+const linkContacts = document.querySelector(".contats");
+const destinationContacts = document.querySelector(".footerContent");
+
+linkContacts.addEventListener('click', function(evento) {
+  evento.preventDefault();
+  destinationContacts.scrollIntoView({ behavior: 'smooth' });
+});
+
+
+//Start Dot Menu Main #############
+var dotMenu = document.querySelector(".dotTopMenu");
+
+document.querySelectorAll(".last-Menu > ul > li").forEach(element =>{
+  element.addEventListener("mouseover", () =>{
+    //console.log(element.offsetLeft + (element.offsetWidth / 2) - 8);
+    dotMenu.style.opacity = "1";
+    dotMenu.style.left = element.offsetLeft + (element.offsetWidth / 2) - 8 +"px";
+
+  })
+});
+
+document.querySelectorAll(".last-Menu > ul > li").forEach(element =>{
+  element.addEventListener("mouseout", () =>{
+    dotMenu.style.opacity = "0";
+    dotMenu.style.left = "958.5px";
+  })
+});
+
+// End dot #############
+
+/*Dot Contacts*/
+var dotSocialMenu = document.querySelector(".dotContacts");
+
+document.querySelectorAll(".socialMedia ul li").forEach(element =>{
+  element.addEventListener("mouseover", () =>{
+    //console.log(dotSocialMenu.style.left = element.offsetLeft + (element.offsetWidth / 2) +"px");
+    dotSocialMenu.style.opacity = "1";
+    dotSocialMenu.style.left = element.offsetLeft + (element.offsetWidth / 2) +"px";
+  })
+});
+
+document.querySelectorAll(".socialMedia > ul > li").forEach(element =>{
+  element.addEventListener("mouseout", () =>{
+    dotSocialMenu.style.opacity = "0";
+    dotSocialMenu.style.left = "62.5px";
+  })
+});
+
+
+</script>
+
+</body>
+</html>
